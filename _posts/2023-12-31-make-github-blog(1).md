@@ -57,7 +57,6 @@ Jekyll 을 사용하는 사람이 많은 만큼, 무료 테마(템플릿)를 쉽
 [beautilful Jekyll theme](https://jekyllthemes.io/theme/beautiful-jekyll) 을 사용했다.
 
 <br><br>
-?
 
 # 3. Github Pages 에 Jekyll 테마 적용하기
 우선 [내가 선택한 테마의 github 링크](https://github.com/daattali/beautiful-jekyll) 에서 소스코드를 받아와야 한다. 만약 다른 테마를 적용하고 싶다면 다른 해당 테마의 github 링크에서 받아오면 된다.<br>
@@ -102,6 +101,18 @@ commit & push 는 내가 위에서 언급한 Sourcetree 에서 간편한게 할 
 정상적으로 commit & push 가 완료되었다면, 대략 2~3분 뒤에 <br>
 {본인Github계정명.github.io} 의 url 로 접속하면 실제 Github Pages 가 서버에 등록되었음을 확인할 수 있다!!
 ![서버에 등록된 내 깃허브 페이지](../assets/img/5.png)
+<br><br>
+
+***
+
+{: .box-note}
+현재 포스팅에서는 beautiful-Jekyll 테마를 fork 해 public repository 로 고정되었지만, <br>
+fork 하지 않고 개인 private repository 에 소스코드를 붙여넣어 사용해도 된다. <br>
+다만 Github Pages 는 private repository 에서 호스팅하려면<br>
+Github Pro 급 이상의 계정이 필요함에 유의하자.
+
+***
+
 
 현재 내가 반영한 코드를 확인하려면 commit&push 후 2~3분간 대기해야 된다는 단점이 있다.<br>
 다음 포스팅에는 commit 하기 전에 내 로컬PC 에서 변경사항을 브라우저상에서 실시간으로 확인하는 방법에 대해 다루고자 한다.
