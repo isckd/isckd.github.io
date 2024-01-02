@@ -88,4 +88,4 @@ comments.html 파일 자체가 없다. 그래서 {% include comments.html %} 부
 ![Utterances 댓글 기능 적용 완료](../assets/img/11.png)
 
 다음 포스팅 내 Github Pages 를 구글 검색에 노출시키는 방법에 대해 올릴 예정이다.<br>
-[깃허브 블로그 만들기4 - 구글 검색 노출시키기](https://isckd.github.io/2024-01-01-make-github-blog(3))
+[깃허브 블로그 만들기4 - 구글 검색 노출시키기](https://isckd.github.io/2024-01-01-make-github-blog(4))
