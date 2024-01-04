@@ -13,7 +13,7 @@ author: mud_cookie
 ## SEO 란?
 궁금한 점이 생겼을 때, Google, Naver 등에 검색하여 답을 얻는 것이 일반적이다. <br>
 물론 AI 가 생기고 판도가 많이 달라졌지만 근본적으로 개발 관련 검색엔진은 구글, 일상 관련 검색엔진은 네이버라고 본다.<br>
-SEO 란 검색 엔진 최적화, 즉 웹사이트의 검색 엔진에서 상위에 노출될 수 있도록 최적화 하는 과정이다. <br>
+SEO 란 검색 엔진 최적화, 즉 구글, 네이버 등의 웹사이트의 검색 엔진에서 상위에 노출될 수 있도록 최적화 하는 과정이다. <br>
 SEO 에 대해서 더 자세히 알아보고 싶다면 아래 링크로 들어가자. <br>
 WIX 라는 홈페이지 제작 툴을 홍보하는 글이긴 하지만 정리가 잘 되어있다.<br>
 [WIX Blog - SEO](https://ko.wix.com/blog/post/what-is-seo)
@@ -204,4 +204,5 @@ sitemap.xml 이나 robots.txt 를 제출하지 않아도 완료된다.<br>
 <br><br>
 ![스크린샷 2024-01-03 202120](https://github.com/isckd/isckd.github.io/assets/100770637/5d0f580c-5d68-4343-9f27-7449a6b461db)
 
-이어서는 일별, 총 노출수 등도 사이드 탭에 추가해보도록 하자.
+이어서는 포스트 우측에 스크롤 위치에 따라 동적으로 움직이는 목차 탭을 만들어보자.
+[깃허브 블로그 만들기5 - 목차에 따른 ScrollSpy 구현 (Table of Contents, TOC)](https://isckd.github.io/2024-01-01-make-github-blog(5))

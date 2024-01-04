@@ -20,8 +20,11 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jemoji"
   gem "jekyll-algolia"
+  gem "jekyll-toc", "~> 0.18.0"
   gem 'jekyll-include-cache'
   gem 'github-pages'
   gem 'faraday-retry'
   gem 'csv'
 end
+
+gem "jekyll-toc", "~> 0.18.0"
