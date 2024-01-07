@@ -18,12 +18,14 @@ toc_sticky: true
 
 ### Disqus
 ![10](https://github.com/isckd/blog-comment/assets/100770637/95554a8c-3864-4477-8458-685a46fb1466)
+<br>
 소셜 플랫폼으로 로그인해 댓글 작성이 가능하다.
 Utterances, Giscus 는 Github 계정으로 댓글을 다는 방식에 비해 접근성이 비교적(?) 좋다. <br>
 하지만 개발 블로그를 보는 사람은 대부분 Github 계정이 있으니 이 부분은 패스. <br>
 그리고 댓글 기능 치고 무거운 편인데다가 무료 라이센스일 경우 광고가 붙는 아이러니한 상황이 발생한다.
 ### Utterances
 ![11](https://github.com/isckd/blog-comment/assets/100770637/f025cd99-89c6-4ec9-af0f-47999897ecd9)
+<br>
 Github Repository 의 Issue 를 활용하여 댓글을 다는 방식이다.<br>
 물론 Github 계정이 있어야 댓글을 달 수 있지만 크게 문제가 되지는 않는다.<br>
 구현 방식이 간편하고, markdown 문법을 지원하며, 댓글(이슈) 알림이 가능하다.

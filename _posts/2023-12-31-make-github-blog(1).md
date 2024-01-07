@@ -1,7 +1,10 @@
 ---
+# layout: posts
 title: "깃허브 블로그 만들기1 - 블로그 플랫폼 선정 및 Jekyll 테마 적용"
 categories: blog
 tags: jekyll
+
+comments: true
 
 toc: true
 toc_sticky: true
