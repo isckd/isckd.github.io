@@ -1,7 +1,7 @@
 ---
 title: 깃허브 블로그 만들기4 - 구글, 네이버, 다음 검색 노출시키기 (Google search console, Naver search advisor, 다음 검색 엔진, SEO)
 categories: blog
-tags: jekyll, SEO
+tags: jekyll SEO
 
 toc: true
 toc_sticky: true
