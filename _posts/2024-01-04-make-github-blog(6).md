@@ -15,4 +15,9 @@ clone 받은 minimal-misakes 내부의 docs 디렉토리를 참고하자. 아래
 [카테고리 - repository 링크](https://github.com/ansohxxn/ansohxxn.github.io/blob/master/) <br>
 
 
-
+{: .notice}
+{: .notice--primary}
+{: .notice--warning}
+{: .notice--success}
+{: .notice--danger}
+{: .notice--info}

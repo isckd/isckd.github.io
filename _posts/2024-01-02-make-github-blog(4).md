@@ -38,7 +38,7 @@ URL 확인 후 소유권 확인을 위해 다음과 같은 화면이 출력된�
 표시된 .html 파일을 다운로드 받는다.
 ![URL 접두어 선택](https://github.com/isckd/isckd.github.io/assets/100770637/371a972c-d372-4e4f-999d-adb92bb19db9)
 
-{: .box-note}
+{: .notice--info}
 이후 해당 파일을 로컬PC의 블로그 디렉토리 내부에 넣는다.<br>
 _config.yml 파일이 존재하는 곳에 넣으면 된다. <br>
 로컬에서 테스트 후 나중에 Push 하자. <br>
@@ -124,7 +124,7 @@ Sitemap: https://{Github계정명}.github.io/sitemap.xml
 Sitemaps 탭으로 이동 후, url 입력창에 sitemap.xml 을 입력 후 추가해보자.<br>
 그러면 '제출된 사이트맵' 에 정상적으로 등록됨을 볼 수 있다.<br>
 
-{: .box-note}
+{: .notice--info}
 **곧바로 '성공' 상태가 뜨지 않을 수 있다. <br>
 이제부터는 google 측에서 승인해주기를 기다리면 된다.<br>
 나 같은 경우에는 바로 성공이 떴지만 실시간으로 구글에 노출되지는 않았다.<br>
@@ -164,7 +164,7 @@ Push 가 완료되면 소유확인을 진행한다.
 ![스크린샷 2024-01-03 200845](https://github.com/isckd/isckd.github.io/assets/100770637/b02c54b2-f7cf-4208-870f-d7cbfec18bf1)
 <br><br>
 
-{: .box-error}
+{: .notice--danger}
 2024.01.03 기준 네이버에 sitemap.xml 을 제출하는 과정 중에 오류가 발생하였다.<br>
 분명 google 에 제출한 [sitemap.xml](#sitemapxml) 과 동일한데, 401 에러가 발생한다.<br>
 다른 브라우저로 변경해도 동일하다. 원인을 도통 모르겠다.<br>
@@ -177,7 +177,7 @@ Push 가 완료되면 소유확인을 진행한다.
 ![스크린샷 2024-01-03 201348](https://github.com/isckd/isckd.github.io/assets/100770637/dd459064-a8da-4871-8091-8e30287ee8ec)
 <br><br>
 
-{: .box-error}
+{: .notice--danger}
 이 원인이 맞는지는 모르겠지만 [네이버 웹마스터 가이드](https://searchadvisor.naver.com/guide/request-crawl) 를 보면 수집 요청 결과의 상태가 <br>
 '요청완료' 인 상태라서 인식하지 못하는 것일까도 싶다. <br>
 처리결과 상태값이 변경되면 다시 시도해 볼 예정이다.

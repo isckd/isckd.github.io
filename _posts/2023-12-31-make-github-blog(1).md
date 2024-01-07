@@ -104,7 +104,7 @@ commit & push 는 내가 위에서 언급한 Sourcetree 에서 간편한게 할 
 
 ***
 
-{: .box-note}
+{: .notice--info}
 현재 포스팅에서는 beautiful-Jekyll 테마를 fork 해 public repository 로 고정되었지만, <br>
 fork 하지 않고 개인 private repository 에 소스코드를 붙여넣어 사용해도 된다. <br>
 다만 Github Pages 는 private repository 에서 호스팅하려면<br>

@@ -31,7 +31,7 @@ gem 'jekyll-toc'
 ```
 이후 _config.yml 파일에 아래 내용을 추가한다.
 
-{: .box-warning}
+{: .notice--warning}
 들여쓰기를 하지 않는다는 것에 유의하자. 공백으로 대체.<br>
 들여쓰기 때문에 구동 시 parsing 에러 때문에 시간을 많이 잡아먹었다.
 
@@ -92,7 +92,7 @@ toc:
   item_prefix: toc-
 ```
 
-{: .box-note}
+{: .notice--info}
 각 파라미터는 아래와 같은 의미를 지닌다. <br><br>
 min_level : html 의 <h1> ~ <h6> 의 레벨 중에 어느 레벨부터 적용할 건지 <br>
 max_level : html 의 <h1> ~ <h6> 의 레벨 중에 어느 레벨부터 적용할 건지 <br>
@@ -123,6 +123,6 @@ base.html 에 적용하면 된다. base 라는 layout 은 모든 html 파일에�
 ![doc guide toc css](https://github.com/isckd/isckd.github.io/assets/100770637/fcc28299-29d8-4329-8fff-520eaf3c6f6a)
 
 
-{: .box-warning}
+{: .notice--warning}
 sidebar 뿐 아니라 이것저것 커스텀하다보니 지금껏 사용한 beautiful-jekyll 테마는 레퍼런스도 적고 귀찮은게 한두가지가 아니었다.<br>
 커스텀하기 쉬운 테마를 찾다보니 minimal-mistake 가 가장 github star 수가 많은 걸 보아 그 테마로 넘어가고자 한다.
