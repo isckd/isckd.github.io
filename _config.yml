@@ -280,7 +280,7 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
+  # _posts                      : _posts 디렉토리 내 .md 파일들의 기본 설정값
   - scope:
       path: ""
       type: posts
@@ -288,13 +288,13 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
+      show_date: true
       comments: true
       share: true
       related: true
-      mathjax: true
       sidebar_main: true
       
-  # _pages                      : 해당 하단 영역이 새로 추가되었습니다.
+  # _pages                      : _pages 디렉토리 내 .md 파일들의 기본 설정값
   - scope:
       path: "_pages"
       type: pages

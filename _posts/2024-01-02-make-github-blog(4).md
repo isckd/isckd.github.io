@@ -6,7 +6,7 @@ tags: jekyll SEO
 toc: true
 toc_sticky: true
 ---
-[깃허브 블로그 만들기3 - 댓글 기능 구현 (Feat. Utterances)](https://isckd.github.io/2024-01-01-make-github-blog(3)) 에 이어서 포스팅한다.
+[깃허브 블로그 만들기3 - 댓글 기능 구현 (Feat. Utterances)](https://isckd.github.io/blog/make-github-blog(3)) 에 이어서 포스팅한다.
 
 ## SEO 란?
 궁금한 점이 생겼을 때, Google, Naver 등에 검색하여 답을 얻는 것이 일반적이다. <br>
@@ -165,22 +165,23 @@ Push 가 완료되면 소유확인을 진행한다.
 <br><br>
 
 {: .notice--danger}
-2024.01.03 기준 네이버에 sitemap.xml 을 제출하는 과정 중에 오류가 발생하였다.<br>
+~~2024.01.03 기준 네이버에 sitemap.xml 을 제출하는 과정 중에 오류가 발생하였다.<br>
 분명 google 에 제출한 [sitemap.xml](#sitemapxml) 과 동일한데, 401 에러가 발생한다.<br>
 다른 브라우저로 변경해도 동일하다. 원인을 도통 모르겠다.<br>
 그래서 다른 sitemap.xml 으로 변경하려고 했으나, sitemap.xml 을 생성해주는 사이트에서는
 내 블로그의 글들을 동적으로 긁어오는 것이 아니라 현재 포스팅된 글을 기준으로만 가져오기 때문에
 차후 작성하는 글들에 대해서 동적으로 검색하지 않는 아이러니한 상황이었다.
 구글에 제출한 sitemap.xml 은 liquid 문법으로 내 포스팅 글들을 동적으로 가져온다.
-혹시라도 이 문제에 대해 아는 사람이 있다면,<br> 코멘트로 남겨주면 매우 고마울 것 같다.<br>
+혹시라도 이 문제에 대해 아는 사람이 있다면,<br> 코멘트로 남겨주면 매우 고마울 것 같다.<br>~~
 ![스크린샷 2024-01-03 201206](https://github.com/isckd/isckd.github.io/assets/100770637/f429f3c9-42cd-4eb7-94dc-f9a2ee2eb075)
 ![스크린샷 2024-01-03 201348](https://github.com/isckd/isckd.github.io/assets/100770637/dd459064-a8da-4871-8091-8e30287ee8ec)
 <br><br>
 
 {: .notice--danger}
-이 원인이 맞는지는 모르겠지만 [네이버 웹마스터 가이드](https://searchadvisor.naver.com/guide/request-crawl) 를 보면 수집 요청 결과의 상태가 <br>
+~~이 원인이 맞는지는 모르겠지만 [네이버 웹마스터 가이드](https://searchadvisor.naver.com/guide/request-crawl) 를 보면 수집 요청 결과의 상태가 <br>
 '요청완료' 인 상태라서 인식하지 못하는 것일까도 싶다. <br>
-처리결과 상태값이 변경되면 다시 시도해 볼 예정이다.
+처리결과 상태값이 변경되면 다시 시도해 볼 예정이다. <br>~~
+네이버에는 GITHUB 블로그 등록이 되지 않는 것으로 보인다. 더 이상 기다리지 않을 예정이다.
 ![스크린샷 2024-01-03 203107](https://github.com/isckd/isckd.github.io/assets/100770637/319b4718-36e2-4f55-aeff-350f87887d60)
 
 
@@ -203,4 +204,4 @@ sitemap.xml 이나 robots.txt 를 제출하지 않아도 완료된다.<br>
 ![스크린샷 2024-01-03 202120](https://github.com/isckd/isckd.github.io/assets/100770637/5d0f580c-5d68-4343-9f27-7449a6b461db)
 
 이어서는 포스트 우측에 스크롤 위치에 따라 동적으로 움직이는 목차 탭을 만들어보자.
-[깃허브 블로그 만들기5 - 목차에 따른 ScrollSpy 구현 (Table of Contents, TOC)](https://isckd.github.io/2024-01-01-make-github-blog(5))
+[깃허브 블로그 만들기5 - 목차에 따른 ScrollSpy 구현 (Table of Contents, TOC)](https://isckd.github.io/blog/make-github-blog(5))

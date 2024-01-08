@@ -6,7 +6,7 @@ tags: jekyll
 toc: true
 toc_sticky: true
 ---
-[깃허브 블로그 만들기2 - 로컬PC에서 실시간 변경사항 확인](https://isckd.github.io/2024-01-01-make-github-blog(2)) 에 이어서 포스팅한다.
+[깃허브 블로그 만들기2 - 로컬PC에서 실시간 변경사항 확인](https://isckd.github.io/blog/make-github-blog(2)) 에 이어서 포스팅한다.
 
 # 1. 댓글 라이브러리 선정
 댓글 기능으로 유명한 라이브러리로는 여러가지가 있다.
@@ -88,4 +88,4 @@ comments.html 파일 자체가 없다. 그래서 {% include comments.html %} 부
 ![11](https://github.com/isckd/blog-comment/assets/100770637/f025cd99-89c6-4ec9-af0f-47999897ecd9)
 
 다음 포스팅 내 Github Pages 를 구글 검색에 노출시키는 방법에 대해 올릴 예정이다.<br>
-[깃허브 블로그 만들기4 - 구글 검색 노출시키기](https://isckd.github.io/2024-01-01-make-github-blog(4))
+[깃허브 블로그 만들기4 - 구글 검색 노출시키기](https://isckd.github.io/blog/make-github-blog(4))

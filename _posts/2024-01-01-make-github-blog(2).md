@@ -6,7 +6,7 @@ tags: jekyll
 toc: true
 toc_sticky: true
 ---
-[깃허브 블로그 만들기1 - 로컬PC에서 실시간 변경사항 확인](https://isckd.github.io/2023-12-31-make-github-blog(1)) 에 이어서 포스팅한다.
+[깃허브 블로그 만들기1 - 로컬PC에서 실시간 변경사항 확인](https://isckd.github.io/blog/make-github-blog(1)) 에 이어서 포스팅한다.
 # 1. Ruby 설치
 로컬PC 에서 Jekyll 을 구동하기 위해서는 Ruby 언어를 로컬에 설치해야 한다. <br>
 [Ruby 다운로드 링크](https://rubyinstaller.org/downloads/) <br>
@@ -145,4 +145,4 @@ _posts 디렉토리 내부에 작성한 것을 기준으로 포스팅이 된다.
 [beautiful-Jekyll 테마 깃허브 respository](https://github.com/daattali/beautiful-jekyll)
 
 다음 포스팅에는 댓글 기능을 구현하려고 한다. 여기서부터는 선택사항인데, 관심이 있다면 진행해보자.<br>
-[깃허브 블로그 만들기3 - 댓글 기능 구현 (Feat. Utterances)](https://isckd.github.io/2024-01-01-make-github-blog(3))
+[깃허브 블로그 만들기3 - 댓글 기능 구현 (Feat. Utterances)](https://isckd.github.io/blog/make-github-blog(3))

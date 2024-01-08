@@ -1,12 +1,12 @@
 ---
-title: 깃허브 블로그 만들기5 - 목차에 따른 ScrollSpy 구현 (Table of Contents, TOC)
+title: 깃허브 블로그 만들기5 - 목차 구현 (Table of Contents, TOC)
 categories: blog
 tags: jekyll
 
 toc: true
 toc_sticky: true
 ---
-[깃허브 블로그 만들기4 - 구글, 네이버, 다음 검색 노출시키기 (Google search console, Naver search advisor, 다음 검색 엔진, SEO)](https://isckd.github.io/2024-01-01-make-github-blog(4)) 에 이어서 포스팅한다.
+[깃허브 블로그 만들기4 - 구글, 네이버, 다음 검색 노출시키기 (Google search console, Naver search advisor, 다음 검색 엔진, SEO)](https://isckd.github.io/blog/make-github-blog(4)) 에 이어서 포스팅한다.
 
 # 1. TOC
 글을 읽을 때 목차가 있다면 원하는 부분으로 쉽게 이동이 가능하고, 가독성이 좋아진다.<br>
@@ -126,3 +126,6 @@ base.html 에 적용하면 된다. base 라는 layout 은 모든 html 파일에�
 {: .notice--warning}
 sidebar 뿐 아니라 이것저것 커스텀하다보니 지금껏 사용한 beautiful-jekyll 테마는 레퍼런스도 적고 귀찮은게 한두가지가 아니었다.<br>
 커스텀하기 쉬운 테마를 찾다보니 minimal-mistake 가 가장 github star 수가 많은 걸 보아 그 테마로 넘어가고자 한다.
+
+
+[깃허브 블로그 만들기6 - 지킬 테마 마이그레이션 beautiful-jekyll -> minimal-mistakes](https://isckd.github.io/blog/make-github-blog(6))

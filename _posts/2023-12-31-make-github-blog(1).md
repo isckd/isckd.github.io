@@ -1,11 +1,12 @@
 ---
 title: "깃허브 블로그 만들기1 - 블로그 플랫폼 선정 및 Jekyll 테마 적용"
-categories:
-  - blog
+categories: blog
 tags: jekyll
 
 toc: true
 toc_sticky: true
+
+last_modified_at: 2024-01-08
 ---
 
 # 1. 블로그 플랫폼 선정
@@ -116,4 +117,4 @@ Github Pro 급 이상의 계정이 필요함에 유의하자.
 현재 내가 반영한 코드를 확인하려면 commit&push 후 2~3분간 대기해야 된다는 단점이 있다.<br>
 다음 포스팅에는 commit 하기 전에 내 로컬PC 에서 변경사항을 브라우저상에서 실시간으로 확인하는 방법에 대해 다루고자 한다.
 
-[깃허브 블로그 만들기2 - 로컬PC에서 실시간 변경사항 확인](https://isckd.github.io/2024-01-01-make-github-blog(2))
+[깃허브 블로그 만들기2 - 로컬PC에서 실시간 변경사항 확인](https://isckd.github.io/blog/make-github-blog(2))
