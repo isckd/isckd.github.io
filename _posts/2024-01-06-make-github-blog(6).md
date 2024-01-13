@@ -327,7 +327,10 @@ comments:
 
 ***
 
-# 5. 검색엔진 노출을 위한 파일 이관
+# 5. 검색엔진 노출 설정
+<br>
+
+## 검색엔진 관련 파일 이관
 <br>
 
 SEO, 즉 검색 노출에 대한 
@@ -335,19 +338,67 @@ SEO, 즉 검색 노출에 대한
 - sitemap.xml
 - robots.txt
 
+<br>
+
 파일을 마저 이관하자.<br>
 상단에 언급했듯이 백업은 해두었길 바란다.<br>
 만약 구글, 네이버, 다음에 대한 검색 노출을 적용해보지 않은 사람이라면 내가 이전에 작성한 포스트<br>
 [깃허브 블로그 만들기4 - 구글, 네이버, 다음 검색 노출시키기 (Google search console, Naver search advisor, 다음 검색 엔진, SEO)](https://isckd.github.io/blog/make-github-blog(4))<br>
 를 참고하기 바란다.
+<br><br>
+
+
+## Google Search Console 인덱스 설정
+<br>
+
+테마를 이관하면서, 파일명은 그대로인데 Jekyll 테마 별 URL 주소를 다르게 인식하는 경우가 있다.
+예시로, 
+- beautiful-Jekyll 테마는 YYYY-MM-DD-{설명}.md 에서 확장자명을 제외한 모든 것을 URL 로 지정했지만,
+- minimal-misakes 테마는 YYYY-MM-DD- 부분과 확장자명을 제외한 것을 URL 로 지정한다.
+
+이로 인해 같은 내용의 포스팅이지만 URL 이 달라져 검색엔진에서 인식하지 못할 수 있다. <br>
+Google Search Console 에서 인덱스를 다시 설정해 주도록 하자.
+
+우선 좌측의 페이지 탭에서, 생성되지 않은 인덱스를 수기로 생성해 주기 위해 표시한 곳으로 진입하자.<br>
+![2024-01-13 20 14 09](https://github.com/isckd/blog-comment/assets/100770637/c64ca2ee-1300-4a95-abcf-e7c80c665f8b)
+
+<br>
+이후 URL 이 변경되어 인덱스가 생성되지 않은 것들의 URL 을 복사에 상단에 붙여넣는다.<br>
+
+![2024-01-13 20 24 48](https://github.com/isckd/blog-comment/assets/100770637/00ef9b02-3c19-4b36-bd0b-c15591b9d216)
+<br>
+
+이후 색인 생성 요청으로 직접 요청한다.
+<br>
+
+![2024-01-13 20 28 53](https://github.com/isckd/blog-comment/assets/100770637/7cd7db29-2db0-43f4-bb22-e973073efa2c)
+
+<br>
+그러면 대략 2분 정도의 시간 뒤에 인덱스가 생성됨을 확인할 수 있다. <br>
+하나의 URL 이 끝났다면, 나머지 인덱스가 생성되지 않은 모든 URL 에 대해 반복한다.
+<br>
+
+![2024-01-13 20 31 39](https://github.com/isckd/blog-comment/assets/100770637/be0f21d5-def5-4e7f-8c81-1996bbcd3db1)
+<br>
+
+![2024-01-13 20 32 48](https://github.com/isckd/blog-comment/assets/100770637/fd849916-a0ce-40ea-b5f6-66f25e892990)
+
+<br>
+간혹 정상적인 진입이 되는 URL 인데 robots.txt 가 없다거나, 페이지를 인식할 수 없다는 <br>
+에러가 발생할 수 있다. 이 때에는 다시 시도하면 정상 작동한다.
 
 <br><br><br>
 
 ***
 
+
+
+
+
 **reference**
 
-아래는 내가 참고한 링크이다. 이 포스팅에서는 사이드바 카테고리에 대해 다루지 않았지만, 아주 정리가 잘 되어있어 첨부한다.<br>
+아래는 몇몇 부분을 참고한 링크이다. <br>
+이 포스팅에서는 사이드바 카테고리에 대해 다루지 않았지만, 두번째와 세번째 링크는 아주 정리가 잘 되어있어 첨부한다.<br>
 [minimal-mistakes A to Z](https://eona1301.github.io/a_to_z/GithubBlog/) <br>
 [카테고리 만들기](https://ansohxxn.github.io/blog/category/) <br>
 [카테고리 만들기- github repository](https://github.com/ansohxxn/ansohxxn.github.io/blob/master/) <br>
