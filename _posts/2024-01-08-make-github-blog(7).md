@@ -137,22 +137,101 @@ Ctrl + Shift + S 는 Intellij 에서 Setting 을 들어가는 단축키이지만
 ~~~
 {% endraw %}
 
+<br><br>
 
 ***
 
-<br><br>
-
 # 카테고리 관련
 
-[카테고리 만들기- github repository](https://github.com/ansohxxn/ansohxxn.github.io/blob/master/) 기준 <br>
+[카테고리 만들기- github repository](https://github.com/ansohxxn/ansohxxn.github.io/blob/master/) 을 기준으로 한다. 카테고리를 잘 꾸며놓아 이를 참고한 상태에서 카테고리를 추가하는 방법이다. <br>
+커스텀한 부분이 있기 때문에, 신규 카테고리 추가 시 아래 두 가지를 반영해야 카테고리 링크 및 왼쪽 사이드바에 반영된다.
 - 새로운 카테고리 만들 떄 /_pages/categories 에서 새 파일 만들어야 함.
 - nav_list_main 에서 좌측 사이드바 카테고리에 카테고리 추가 및 상위폴더 추가 가능.
 
+## /_pages/categories/category-{카테고리명}.md 작성예시
+
+```
+{% raw %}
+---
+title: "{카테고리명}"
+layout: archive
+permalink: categories/{카테고리명}
+author_profile: true
+sidebar_main: true
+---
 
 
-{: .notice}
+{% assign posts = site.categories.{카테고리명} %}
+<!--
+참고 링크에서는 archive-single.html 이 아닌 archive-single2.html 를 적용해
+카테고리 클릭 시 연결되는 URL 의 템플릿을 변경했으나, 나같은 경우는 기본 템플릿으로 적용했다.
+취향껏 적용하면 된다.
+-->
+{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+{% endraw %}
+```
+
+<br>
+
+## nav_list_main 에 카테고리 추가
+
+<br>
+아래 코드블럭의 주석을 보고 참고하면 된다.<br>
+대분류 / 소분류(실제 카테고리) 로 분류해 두었고, 필요에 따라 추가하면 된다.<br>
+
 {: .notice--primary}
-{: .notice--warning}
-{: .notice--success}
-{: .notice--danger}
-{: .notice--info}
+다시 한 번 말하지만, [카테고리 만들기- github repository](https://github.com/ansohxxn/ansohxxn.github.io/blob/master/) 를 참고한 코드에서 동작한다.<br>
+카테고리 리스트 표현 방식이나 포스팅 수 표기같은 기능을 포함하고 있으니 기본 minimal-mistakes 테마에서는 동작하지 않을 것이다.
+
+```
+{% raw %}
+{% assign sum = site.posts | size %}
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <!--전체 글 수-->
+      <li>
+            📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style>
+      </li>
+      <li>
+        <!--span 태그로 카테고리들을 크게 대분류 ex) spring/DB/네트워크-->
+        <span class="nav__sub-title">ETC</span>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열. 소분류-->
+            <ul>
+                <!--blog 카테고리 글들을 모아둔 페이지인 /categories/blog 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시-->
+                {% for category in site.categories %}
+                    {% if category[0] == "blog" %}
+                        <li><a href="/categories/blog" class="">blog ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <!-- <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "test2" %}
+                        <li><a href="/categories/test2" class="">표시할 카테고리 별칭 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul> -->
+        <!-- <span class="nav__sub-title">대분류2</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "test3" %}
+                        <li><a href="/categories/test3" class="">표시할 카테고리 별칭 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "test4" %}
+                        <li><a href="/categories/test4" class="">표시할 카테고리 별칭 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul> -->
+      </li>
+  </ul>
+</nav>
+{% endraw %}
+```
